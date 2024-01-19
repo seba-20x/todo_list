@@ -30,7 +30,7 @@ const initialTask = () =>{
 
 btnTask.addEventListener('click', () => {
     const task = nameTask.value;
-    tasks.push({id: Date.now(), name: task, state: false })
+    tasks.push({id: Math.floor(Math.random() * 10000), name: task, state: false })
     nameTask.value = '';
     updateList(tasks)
 
